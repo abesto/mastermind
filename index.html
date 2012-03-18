@@ -1,0 +1,61 @@
+<!DOCTYPE html5>
+<html>
+<head>
+    <title>Masterminds</title>
+    <script type="text/javascript" src="scripts/model.js"></script>
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/ui.js"></script>
+
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css"/>
+    <link rel="stylesheet" href="stylesheets/app.css"/>
+</head>
+<body>
+    <div class="container"><div class="row">
+        <div class="page-header">
+            <h1>Mastermind
+                <small>A simple borwser version</small>
+            </h1>
+        </div>
+        <div id="game" class="span6"></div>
+        <div class="span3">
+            <form><fieldset><legend>New game</legend>
+                <label>
+                    Rows
+                    <input type="text" name="rows" value="10">
+                </label>
+                <label>
+                    Holes
+                    <input type="text" name="holes" value="4">
+                </label>
+                <label>
+                    Colors
+                    <input type="text" name="colors" value="6">
+                </label>
+                <input class="btn" type="submit" value="Start new game">
+            </fieldset></form>
+        </div>
+        <div class="span3">
+            <h3>Rules</h3>
+            <p>See the <a href="http://en.wikipedia.org/wiki/Mastermind_(board_game)">Wikipedia article</a>
+                of the original game for a thorough description.</p>
+                <p>The computer makes a <strong>code</strong> of colored pegs. Your <strong>goal</strong> is to figure it out based on the feedback given by the computer.</p>
+                <p>You get feedback in the form of white and black <strong>key</strong> pegs. A white key peg means that one of your pegs is of the right color, but in the wrong place. A black key peg means that one of your pegs is both of the right color, and in the right place.</p>
+                <h3>How to play?</h3>
+                <p>Start a new game by clicking the "Start new game" button on the left.</p>
+                <p>Select a peg color by clicking a peg in the bottom row. The currently selected color is highlighted.</p>
+                <p>Place pegs of the selected color by clicking the fields of the active row on the game board.</p>
+                <p>Press the "Guess" button to make the computer evaluate your guess.</p>
+            </div>
+        </div>
+        <div class="row">
+            <footer class="footer span12">
+                <p>You may use any part or the whole of this application under the <a href="https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt">MIT License</a>.</p>
+                <p>Application code written in <a href="http://coffeescript.org/">CoffeeScript</a>.</p>
+                <p>DOM manipulation built with <a href="http://jquery.org">jQuery</a>, licensed under the <a href="http://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt">MIT License</a>.</p>
+                <p>Layout and some styles by <a href="http://twitter.github.com/bootstrap">Twitter Bootstrap</a>, licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>.</p>
+            </footer>
+        </div>
+    </div>
+    <div class="ribbon"><a href="#" rel="me">Fork me on GitHub</a></div>
+</body>
+</html>
