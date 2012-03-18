@@ -1,0 +1,4 @@
+This is a simple implementation of the Mastermind game for the browser using CoffeeScript, jQuery and Twitter Bootstrap.
+
+You can recompile the CoffeeScript files with:
+coffee -c -b scripts/*.coffee
