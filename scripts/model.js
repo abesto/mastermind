@@ -20,7 +20,6 @@ evaluators = {
     ret = {};
     ret[keyPegs.white] = 0;
     ret[keyPegs.black] = 0;
-    console.log(solution, guess);
     for (solutionPos = 0, _len = solution.length; solutionPos < _len; solutionPos++) {
       color = solution[solutionPos];
       if (guess[solutionPos] === color) {
@@ -28,7 +27,6 @@ evaluators = {
         guess[solutionPos] = solution[solutionPos] = -1;
       }
     }
-    console.log(solution, guess);
     for (solutionPos = 0, _len2 = solution.length; solutionPos < _len2; solutionPos++) {
       color = solution[solutionPos];
       if (color === -1) continue;
@@ -37,7 +35,6 @@ evaluators = {
         guess[guessPos] = -1;
       }
     }
-    console.log(solution, guess);
     ret.solved = ret[keyPegs.black] === solution.length;
     return ret;
   }
